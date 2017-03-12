@@ -1,14 +1,18 @@
 <template>
   <div id="app">
     <p>{{ message }}</p>
+    <another />
   </div>
 </template>
 
 <script>
-module.exports = {
-  data: function () {
+import Another from './another.vue'
+
+export default {
+  components: { Another },
+  data() {
     return {
-      message: "Hello Vue!"
+      message: "Hello Vue comp3!"
     }
   }
 }
