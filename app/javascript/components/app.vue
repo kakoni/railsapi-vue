@@ -1,18 +1,18 @@
 <template>
   <div id="app">
     <p>{{ message }}</p>
-    <another />
+    <fetcher />
   </div>
 </template>
 
 <script>
-import Another from './another.vue'
+import Fetcher from './fetcher.vue'
 
 export default {
-  components: { Another },
+  components: { Fetcher },
   data() {
     return {
-      message: "Hello Vue comp3!"
+      message: "Hello Vue comp!"
     }
   }
 }
